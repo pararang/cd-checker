@@ -9,7 +9,6 @@
 [![Quality Score](https://img.shields.io/scrutinizer/quality/g/selective-php/cd-checker.svg?style=flat-square)](https://scrutinizer-ci.com/g/selective-php/cd-checker/?branch=master)
 [![Total Downloads](https://img.shields.io/packagist/dt/selective/cd-checker.svg?style=flat-square)](https://packagist.org/packages/selective/cd-checker/stats)
 
-
 ## Features
 
 Detection of circular dependencies between:
