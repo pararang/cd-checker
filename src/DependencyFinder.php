@@ -71,7 +71,8 @@ final class DependencyFinder
 
         $reflectionClass = new ReflectionClass($class);
 
-        if ($reflectionClass->isInterface() ||
+        if (
+            $reflectionClass->isInterface() ||
             $reflectionClass->isAbstract() ||
             $reflectionClass->isTrait() ||
             $reflectionClass->isAnonymous()
