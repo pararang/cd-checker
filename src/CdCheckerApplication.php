@@ -13,7 +13,7 @@ final class CdCheckerApplication extends Application
     /**
      * Override the default command name logic and return our check command.
      *
-     * @param InputInterface $input
+     * @param InputInterface $input Input
      *
      * @return string
      */

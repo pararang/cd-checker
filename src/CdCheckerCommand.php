@@ -88,8 +88,8 @@ final class CdCheckerCommand extends Command
     /**
      * Execute the actual checker.
      *
-     * @param InputInterface $input
-     * @param OutputInterface $output
+     * @param InputInterface $input Input
+     * @param OutputInterface $output   Output
      *
      * @return int
      */
@@ -124,8 +124,8 @@ final class CdCheckerCommand extends Command
     /**
      * Check files.
      *
-     * @param InputInterface $input
-     * @param SplFileInfo[] $files
+     * @param InputInterface $input Input
+     * @param SplFileInfo[] $files  Files
      *
      * @return int Total files
      */
@@ -145,9 +145,9 @@ final class CdCheckerCommand extends Command
     /**
      * Process files.
      *
-     * @param SplFileInfo[] $files
-     * @param int $filesPerLine
-     * @param int $totalFiles
+     * @param SplFileInfo[] $files  Files
+     * @param int $filesPerLine Total fFiles per line
+     * @param int $totalFiles   Total files
      *
      * @return int Processed
      */
@@ -180,7 +180,7 @@ final class CdCheckerCommand extends Command
     /**
      * Process chunk files.
      *
-     * @param SplFileInfo[] $chunk
+     * @param SplFileInfo[] $chunk  Chunk of file
      *
      * @return int Processed
      */
@@ -209,8 +209,8 @@ final class CdCheckerCommand extends Command
     /**
      * Process options.
      *
-     * @param InputInterface $input
-     * @param OutputInterface $output
+     * @param InputInterface $input     Input
+     * @param OutputInterface $output   Output
      *
      * @return void
      */
@@ -240,7 +240,7 @@ final class CdCheckerCommand extends Command
     /**
      * Print application name.
      *
-     * @param OutputInterface $output
+     * @param OutputInterface $output   Output
      *
      * @return void
      */
@@ -254,8 +254,8 @@ final class CdCheckerCommand extends Command
     /**
      * Print legend.
      *
-     * @param bool $errors
-     * @param bool $warnings
+     * @param bool $errors      Errors
+     * @param bool $warnings    Warnings
      *
      * @return void
      */
@@ -273,9 +273,9 @@ final class CdCheckerCommand extends Command
     /**
      * Print verbose result.
      *
-     * @param InputInterface $input
-     * @param float $startTime
-     * @param int $totalFiles
+     * @param InputInterface $input Input
+     * @param float $startTime  Start time
+     * @param int $totalFiles   Total files
      *
      * @return void
      */
@@ -336,7 +336,7 @@ final class CdCheckerCommand extends Command
     /**
      * Check a specific PHP file for errors.
      *
-     * @param SplFileInfo $file
+     * @param SplFileInfo $file File
      *
      * @return array
      */

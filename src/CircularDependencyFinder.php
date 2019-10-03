@@ -40,7 +40,7 @@ final class CircularDependencyFinder
     /**
      * Process classes.
      *
-     * @param ClassDependency[] $classDependencies
+     * @param ClassDependency[] $classDependencies  Class dependency
      *
      * @return void
      */
@@ -51,6 +51,10 @@ final class CircularDependencyFinder
         }
     }
 
+    /**
+     * @param array           $classDependencies    Array of class dependency
+     * @param ClassDependency $classDependency      Class dependency
+     */
     private function findCircularDependencies(array $classDependencies, ClassDependency $classDependency): void
     {
         foreach ($classDependency->dependencies->all() as $dependency) {
@@ -65,9 +69,9 @@ final class CircularDependencyFinder
     }
 
     /**
-     * @param ClassDependency[] $classDependencies
-     * @param Dependency $dependency
-     * @param string $class
+     * @param ClassDependency[] $classDependencies Class dependency
+     * @param Dependency $dependency Dependency
+     * @param string $class Class
      *
      * @return bool
      */

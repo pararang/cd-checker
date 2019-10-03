@@ -13,7 +13,7 @@ final class DependencyList
     private $dependencies = [];
 
     /**
-     * @param Dependency $dependency
+     * @param Dependency $dependency    Dependency
      */
     public function add(Dependency $dependency): void
     {
