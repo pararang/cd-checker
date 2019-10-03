@@ -8,6 +8,7 @@
 
     <file>./src</file>
     <file>./tests</file>
+    <exclude-pattern>*/tests/TestClass/*$</exclude-pattern>
 
     <rule ref="PSR2"></rule>
     <rule ref="PSR12"></rule>

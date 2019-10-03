@@ -27,8 +27,8 @@ final class ClassDependency
     /**
      * The constructor.
      *
-     * @param SplFileInfo $file
-     * @param string $class
+     * @param SplFileInfo $file The file
+     * @param string $class The class
      */
     public function __construct(SplFileInfo $file, string $class)
     {

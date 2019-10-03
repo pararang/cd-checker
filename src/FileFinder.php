@@ -6,6 +6,9 @@ use DirectoryIterator;
 use SplFileInfo;
 use Symfony\Component\Console\Input\InputInterface;
 
+/**
+ * FileFinder.
+ */
 final class FileFinder
 {
     /**
@@ -18,6 +21,11 @@ final class FileFinder
      */
     protected $exclude = [];
 
+    /**
+     * The constructor.
+     *
+     * @param string $basePath The base path
+     */
     public function __construct(string $basePath)
     {
         $this->basePath = $basePath;
@@ -26,10 +34,10 @@ final class FileFinder
     /**
      * Find all files.
      *
-     * @param InputInterface $input
-     * @param array $exclude
+     * @param InputInterface $input The input
+     * @param array $exclude The excluded files
      *
-     * @return array
+     * @return array The files
      */
     public function findFiles(InputInterface $input, array $exclude = []): array
     {
@@ -57,8 +65,8 @@ final class FileFinder
     /**
      * Iterate through a directory and check all of the PHP files within it.
      *
-     * @param string $path
-     * @param SplFileInfo[] $worklist
+     * @param string $path The path
+     * @param SplFileInfo[] $worklist The worklist
      */
     protected function processDirectory(string $path = '', array &$worklist = []): void
     {
@@ -88,7 +96,7 @@ final class FileFinder
     /**
      * Check if path should be excluded.
      *
-     * @param string $path
+     * @param string $path The path
      *
      * @return bool True if path has matched pattern
      */

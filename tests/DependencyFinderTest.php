@@ -11,7 +11,7 @@ use SplFileInfo;
 class DependencyFinderTest extends TestCase
 {
     /**
-     * @var DependencyFinder $dependencyFinder
+     * @var DependencyFinder
      */
     private $dependencyFinder;
 
@@ -26,7 +26,7 @@ class DependencyFinderTest extends TestCase
 
         /** @var SplFileInfo|MockObject $splFileInfo */
         $splFileInfo = $this->createMock(SplFileInfo::class);
-        $splFileInfo->method("getRealPath")
+        $splFileInfo->method('getRealPath')
             ->willReturn(false);
 
         $this->dependencyFinder->processFile($splFileInfo, []);

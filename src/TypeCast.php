@@ -12,9 +12,9 @@ final class TypeCast
     /**
      * Converts the representation of a number to its integer equivalent.
      *
-     * @param mixed $value the representation of a number
+     * @param mixed $value The representation of a number
      *
-     * @return int the integer equivalent
+     * @return int The integer equivalent
      */
     public static function castInt($value): int
     {
@@ -28,9 +28,9 @@ final class TypeCast
     /**
      * Converts the representation of a string to its string equivalent.
      *
-     * @param mixed $value the representation of a string
+     * @param mixed $value The representation of a string
      *
-     * @return string the array equivalent
+     * @return string The array equivalent
      */
     public static function castString($value): string
     {
